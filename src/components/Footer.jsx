@@ -14,9 +14,22 @@ export default function Footer() {
             </p>
           </div>
 
-          <p className="text-xs text-slate-500 text-center">
-            &copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved.
-          </p>
+          <div className="flex flex-col items-center md:items-end gap-1">
+            <p className="text-xs text-slate-500 text-center md:text-right">
+              &copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All rights reserved.
+            </p>
+            <p className="text-xs text-slate-500">
+              Made by{' '}
+              <a
+                href="https://www.xenosysweb.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-400 hover:underline font-medium transition-colors"
+              >
+                xenosys
+              </a>
+            </p>
+          </div>
         </div>
       </footer>
 
